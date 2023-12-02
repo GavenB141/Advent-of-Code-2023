@@ -17,7 +17,7 @@ fn part1(input: &str) -> u32 {
         let mut extracted = String::new();
         extracted += format!("{}{}", digits[0].to_string(), &digits.last().unwrap().to_string()).as_str();
 
-        sum += extracted.parse::<u32>().expect("Valid integer");
+        sum += extracted.parse::<u32>().expect("a valid integer");
     }
 
     return sum;
