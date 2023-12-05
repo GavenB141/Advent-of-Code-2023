@@ -31,7 +31,7 @@ fn part2(input:&str) -> usize {
     }
 
     for map in &maps {
-        seeds = convert_ranges(seeds, map);;
+        seeds = convert_ranges(seeds, map);
     }
 
     let mut effective:Vec<usize> = Vec::new();
