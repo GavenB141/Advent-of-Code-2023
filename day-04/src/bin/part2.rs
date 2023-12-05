@@ -13,7 +13,7 @@ fn part2(input:&str) -> usize {
     let mut i = 0; 
     while i < cards.len() {
         let (card_num, numbers) = cards[i].split_once(":").unwrap();
-        let card_num = Vec::from_iter(card_num.split_whitespace())[1].parse::<usize>().unwrap();
+        let card_num = card_num.split_whitespace().nth(1).unwrap().parse::<usize>().unwrap();
 
         let (winners, numbers) = numbers.split_once('|').unwrap();
         let winners = Vec::from_iter(winners.split_whitespace());
