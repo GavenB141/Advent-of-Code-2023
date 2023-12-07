@@ -102,7 +102,6 @@ fn part2(input:&str) -> usize {
     let mut sum = 0;
 
     for i in 0..hands.len() {
-        println!("{} {} {} {} {} - {}", hands[i].cards[0],hands[i].cards[1],hands[i].cards[2],hands[i].cards[3],hands[i].cards[4], hands[i].most_frequent_card());
         sum += hands[i].bid * (i+1);
     }
 
