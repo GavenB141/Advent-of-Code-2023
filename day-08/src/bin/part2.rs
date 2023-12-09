@@ -4,8 +4,6 @@ fn main() {
     println!("{}", part2(include_str!("./input.txt")));
 }
 
-
-
 fn part2(input:&str) -> usize {
     let fixed = input.replace('(', "").replace(')', "");
     let (instructions, map) = fixed.split_once('\n').unwrap();
